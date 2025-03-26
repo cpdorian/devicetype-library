@@ -1,0 +1,46 @@
+---
+manufacturer: Stormshield
+model: SN-S-SERIES-220
+slug: stormshield-sn-s-series-220
+part_number: SN-S-SERIES-220
+u_height: 1
+subdevice_role: child
+is_full_depth: false
+weight: 1.67
+weight_unit: kg
+airflow: passive
+front_image: true
+rear_image: true
+comments: '[SN-S-SERIES-220 datasheet](https://www.stormshield.com/wp-content/uploads/SNS-FR-SN-S-Series-220-Datasheet.pdf)'
+power-ports:
+  - name: PS1
+    type: dc-terminal
+  - name: PS2
+    type: dc-terminal
+console-ports:
+  - name: console
+    type: rj-45
+  - name: usb-console
+    type: usb-mini-a
+interfaces:
+  - name: management
+    type: 1000base-t
+    mgmt_only: true
+  - name: ethernet1/1
+    type: 1000base-t
+  - name: ethernet1/2
+    type: 1000base-t
+  - name: ethernet1/3
+    type: 1000base-t
+  - name: ethernet1/4
+    type: 1000base-t
+  - name: ethernet1/5
+    type: 1000base-t
+  - name: ethernet1/6
+    type: 1000base-t
+  - name: ethernet1/7
+    type: 1000base-t
+  - name: ethernet1/8
+    type: 1000base-t
+  - name: ethernet1/9
+    type: SFP
