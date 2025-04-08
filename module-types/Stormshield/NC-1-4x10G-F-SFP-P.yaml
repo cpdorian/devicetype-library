@@ -1,0 +1,14 @@
+---
+manufacturer: Stormshield
+model: 4 ports fiber 10 Gigabit SFP+
+part_number: NC-1-4x10G-F-SFP-P
+comments: 4 ports fiber 10 Gigabit SFP+ for SN-L-Series SN-XL-Series
+interfaces:
+  - name: '{module}1'
+    type: 10gbase-x-sfpp
+  - name: '{module}2'
+    type: 10gbase-x-sfpp
+  - name: '{module}3'
+    type: 10gbase-x-sfpp
+  - name: '{module}4'
+    type: 10gbase-x-sfpp

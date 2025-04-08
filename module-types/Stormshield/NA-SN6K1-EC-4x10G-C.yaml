@@ -1,0 +1,14 @@
+---
+manufacturer: Stormshield
+model: 4 ports copper 10GBASE-T
+part_number: NA-SN6K1-EC-4x10G-C
+comments: 4 ports copper 10GBASE-T for SN6100
+interfaces:
+  - name: '{module}1'
+    type: 10gbase-t
+  - name: '{module}2'
+    type: 10gbase-t
+  - name: '{module}3'
+    type: 10gbase-t
+  - name: '{module}4'
+    type: 10gbase-t

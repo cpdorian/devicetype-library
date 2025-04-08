@@ -1,0 +1,14 @@
+---
+manufacturer: Stormshield
+model: 4 ports fiber 10 Gigabit SFP+
+part_number: NA-NW-CARD-4x10G-F
+comments: 4 ports fiber 10 Gigabit SFP+ for SN710 SN910 SN-M-Series SN1100 SN2100 SN3100 
+interfaces:
+  - name: '{module}1'
+    type: 10gbase-x-sfpp
+  - name: '{module}2'
+    type: 10gbase-x-sfpp
+  - name: '{module}3'
+    type: 10gbase-x-sfpp
+  - name: '{module}4'
+    type: 10gbase-x-sfpp

@@ -1,0 +1,22 @@
+---
+manufacturer: Stormshield
+model: 8 ports copper 100x1000x2500
+part_number: NC-1-8x2_5G-C
+comments: 8 ports copper 100x1000x2500 for SN-L-Series SN-XL-Series
+interfaces:
+  - name: '{module}1'
+    type: 2.5gbase-t
+  - name: '{module}2'
+    type: 2.5gbase-t
+  - name: '{module}3'
+    type: 2.5gbase-t
+  - name: '{module}4'
+    type: 2.5gbase-t
+  - name: '{module}5'
+    type: 2.5gbase-t
+  - name: '{module}6'
+    type: 2.5gbase-t
+  - name: '{module}7' 
+    type: 2.5gbase-t
+  - name: '{module}8' 
+    type: 2.5gbase-t

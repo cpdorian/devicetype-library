@@ -1,0 +1,14 @@
+---
+manufacturer: Stormshield
+model: 4 ports copper 10GBASE-T
+part_number: NC-1-4x10G-COP
+comments: 4 ports copper 10GBASE-T for SN-L-Series SN-XL-Series
+interfaces:
+  - name: '{module}1'
+    type: 10gbase-t
+  - name: '{module}2'
+    type: 10gbase-t
+  - name: '{module}3'
+    type: 10gbase-t
+  - name: '{module}4'
+    type: 10gbase-t

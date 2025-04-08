@@ -1,0 +1,22 @@
+---
+manufacturer: Stormshield
+model: 8 ports fiber 1 Gigabit SFP
+part_number: NA-SN6K1-EC-8xG-F
+comments: 8 ports fiber 1 Gigabit SFP for SN6100
+interfaces:
+  - name: '{module}1'
+    type: 1000base-x-sfp
+  - name: '{module}2'
+    type: 1000base-x-sfp
+  - name: '{module}3'
+    type: 1000base-x-sfp
+  - name: '{module}4'
+    type: 1000base-x-sfp
+  - name: '{module}5'
+    type: 1000base-x-sfp
+  - name: '{module}6'
+    type: 1000base-x-sfp
+  - name: '{module}7' 
+    type: 1000base-x-sfp
+  - name: '{module}8' 
+    type: 1000base-x-sfp

@@ -1,0 +1,22 @@
+---
+manufacturer: Stormshield
+model: 8 ports fiber 1 Gigabit SFP
+part_number: NC-1-8xG-FIB-SFP
+comments: 8 ports fiber 1 Gigabit SFP for SN-L-Series SN-XL-Series
+interfaces:
+  - name: '{module}1'
+    type: 1000base-x-sfp
+  - name: '{module}2'
+    type: 1000base-x-sfp
+  - name: '{module}3'
+    type: 1000base-x-sfp
+  - name: '{module}4'
+    type: 1000base-x-sfp
+  - name: '{module}5'
+    type: 1000base-x-sfp
+  - name: '{module}6'
+    type: 1000base-x-sfp
+  - name: '{module}7' 
+    type: 1000base-x-sfp
+  - name: '{module}8' 
+    type: 1000base-x-sfp

@@ -1,0 +1,10 @@
+---
+manufacturer: Stormshield
+model: 2 ports fiber 25 Gigabits SFP28
+part_number: NA-EX-CARD-2x25G-F
+comments: 2 ports fiber 25 Gigabits SFP28 for SN1100 SN2100 SN3100 SN-M-Series
+interfaces:
+  - name: '{module}1'
+    type: 25gbase-x-sfp28
+  - name: '{module}2'
+    type: 25gbase-x-sfp28

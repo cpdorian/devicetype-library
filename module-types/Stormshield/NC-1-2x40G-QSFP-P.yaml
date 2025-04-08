@@ -1,0 +1,10 @@
+---
+manufacturer: Stormshield
+model: 2 ports fiber 40 Gigabit QSFP+
+part_number: NC-1-2x40G-QSFP-P
+comments: 2 ports fiber 40 Gigabit QSFP+ for SN-L-Series SN-XL-Series
+interfaces:
+  - name: '{module}1'
+    type: 40gbase-x-qsfpp
+  - name: '{module}2'
+    type: 40gbase-x-qsfpp

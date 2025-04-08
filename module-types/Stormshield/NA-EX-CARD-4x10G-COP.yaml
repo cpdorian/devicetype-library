@@ -1,0 +1,14 @@
+---
+manufacturer: Stormshield
+model: 4 ports copper 10GBASE-T
+part_number: NA-EX-CARD-4x10G-COP
+comments: 4 ports copper 10GBASE-T for SN710 SN910 SN-M-Series SN1100 SN2100 SN3100
+interfaces:
+  - name: '{module}1'
+    type: 10gbase-t
+  - name: '{module}2'
+    type: 10gbase-t
+  - name: '{module}3'
+    type: 10gbase-t
+  - name: '{module}4'
+    type: 10gbase-t

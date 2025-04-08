@@ -1,0 +1,14 @@
+---
+manufacturer: Stormshield
+model: 2 ports fiber 10 Gigabit SFP+
+part_number: NA-EX-CARD-2x10G-FIB
+comments: 2 ports fiber 10 Gigabit SFP+ for SN710 SN910
+interfaces:
+  - name: '{module}1'
+    type: 10gbase-x-sfpp
+  - name: '{module}2'
+    type: 10gbase-x-sfpp
+  - name: '{module}3'
+    type: 10gbase-x-sfpp
+  - name: '{module}4'
+    type: 10gbase-x-sfpp
