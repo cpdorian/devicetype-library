@@ -1,12 +1,12 @@
 ---
 manufacturer: Stormshield
-model: SN6100
-slug: stormshield-sn6100
-part_number: SN6100
+model: SN-XL-SERIES-5200
+slug: stormshield-sn-xl-series-5200
+part_number: SN-XL-SERIES-5200
 u_height: 2
 subdevice_role: parent
 is_full_depth: true
-weight: 15.3
+weight: 18.97
 weight_unit: kg
 airflow: active
 front_image: true
@@ -14,21 +14,23 @@ rear_image: true
 power-ports:
   - name: PS1
     type: iec-60320-c14
-    allocated_draw: 558
-    maximum_draw: 558
+    allocated_draw: 560
+    maximum_draw: 560
   - name: PS2
     type: iec-60320-c14
-    allocated_draw: 558
-    maximum_draw: 558
+    allocated_draw: 560
+    maximum_draw: 560
 console-ports:
   - name: console
     type: rj-45
+  - name: usb-console
+    type: usb-c
 interfaces:
   - name: MGMT1
-    type: 10gbase-x-sfpp
+    type: 2.5gbase-t
     mgmt_only: true
   - name: MGMT2
-    type: 10gbase-x-sfpp
+    type: 2.5gbase-t
     mgmt_only: true
   - name: IPMI
     type: 1000base-t

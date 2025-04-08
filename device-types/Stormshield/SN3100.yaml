@@ -1,0 +1,43 @@
+---
+manufacturer: Stormshield
+model: SN3100
+slug: stormshield-sn3100
+part_number: SN3100
+u_height: 1
+subdevice_role: parent
+is_full_depth: true
+weight: 9.86
+weight_unit: kg
+airflow: active
+front_image: true
+rear_image: true
+power-ports:
+  - name: PS1
+    type: iec-60320-c14
+    allocated_draw: 141
+    maximum_draw: 141
+  - name: PS2
+    type: iec-60320-c14
+    allocated_draw: 141
+    maximum_draw: 141
+console-ports:
+  - name: console
+    type: rj-45
+interfaces:
+  - name: MGMT1
+    type: 1000base-t
+    mgmt_only: true
+  - name: MGMT2
+    type: 1000base-t
+    mgmt_only: true
+module-bays:
+  - name: Slot1
+    position: '1'
+  - name: Slot2
+    position: '2'
+  - name: Slot3
+    position: '3'
+  - name: SSD0
+    position: '0'
+  - name: SSD1
+    position: '1'
