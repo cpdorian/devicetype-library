@@ -1,0 +1,218 @@
+# ─────────────────────────────────────────────
+# Device Type – NetApp AFF C30 (châssis 2 U)
+# ─────────────────────────────────────────────
+device-types:
+  - manufacturer: NetApp
+    model: AFF C30
+    slug: netapp-aff-c30
+    part_number: C30
+    u_height: 2
+    is_full_depth: true
+    weight: 27.9          # kg – châssis complet
+    weight_unit: kg
+    power-ports:
+      - name: PSU1
+        type: iec-60320-c14
+        maximum_draw: 340   # W (½ de la conso médiane)
+        allocated_draw: 300
+      - name: PSU2
+        type: iec-60320-c14
+        maximum_draw: 340
+        allocated_draw: 300
+    module-bays:           # deux têtes : A et B
+      - name: A
+        position: 1
+      - name: B
+        position: 2
+# ─────────────────────────────────────────────
+# Device Type – NetApp AFF C60 (châssis 2 U)
+# ─────────────────────────────────────────────
+  - manufacturer: NetApp
+    model: AFF C60
+    slug: netapp-aff-c60
+    part_number: C60
+    u_height: 2
+    is_full_depth: true
+    weight: 27.9          # kg – châssis complet
+    weight_unit: kg
+    power-ports:
+      - name: PSU1
+        type: iec-60320-c14
+        maximum_draw: 340   # W (½ de la conso médiane 628 W)
+        allocated_draw: 300
+      - name: PSU2
+        type: iec-60320-c14
+        maximum_draw: 340
+        allocated_draw: 300
+    module-bays:           # deux têtes : A et B
+      - name: A
+        position: 1
+      - name: B
+        position: 2
+
+# ─────────────────────────────────────────────
+# Module Type – AFF-C30A-IN-U-C (nœud)
+# ─────────────────────────────────────────────
+module-types:
+  - manufacturer: NetApp
+    model: AFF-C30A-IN-U-C – Controller node
+    slug: netapp-aff-c30a-in-u-c
+    part_number: AFF-C30A-IN-U-C
+    weight: 13.95         # kg – ≈ ½ du châssis
+    weight_unit: kg
+    console-ports:
+      - name: {module}CON         # port RJ-45 console
+        type: rj-45
+    interfaces:
+      - name: e{module}M         # port management 1 GbE
+        type: 1000base-t
+        mgmt_only: true
+    module-bays:          # 4 slots PCIe dans le nœud
+      - name: {module}1
+        position: 1
+      - name: {module}2
+        position: 2
+      - name: {module}3
+        position: 3
+      - name: {module}4
+        position: 4
+
+# ─────────────────────────────────────────────
+# Module Type – AFF-C60A-IN-U-C (nœud)
+# ─────────────────────────────────────────────
+  - manufacturer: NetApp
+    model: AFF-C60A-IN-U-C – Controller node
+    slug: netapp-aff-c60a-in-u-c
+    part_number: AFF-C60A-IN-U-C
+    weight: 13.95        # kg – ≈ ½ du châssis
+    weight_unit: kg
+    console-ports:
+      - name: {module}CON           # port RJ-45 console
+        type: rj-45
+    interfaces:
+      - name: e{module}M            # port management 1 GbE
+        type: 1000base-t
+        mgmt_only: true
+    module-bays:                    # 4 slots PCIe dans le nœud
+      - name: {module}1
+        position: 1
+      - name: {module}2
+        position: 2
+      - name: {module}3
+        position: 3
+      - name: {module}4
+        position: 4
+
+  - manufacturer: NetApp
+    model: X60130A – 2× 100 GbE QSFP28
+    slug: netapp-x60130a
+    part_number: X60130A
+    interfaces:
+      - name: e{module}a
+        type: 100gbase-x-qsfp28
+      - name: e{module}b
+        type: 100gbase-x-qsfp28   #
+
+  - manufacturer: NetApp
+    model: X60131A – 2× 25 GbE SFP28
+    slug: netapp-x60131a
+    part_number: X60131A
+    interfaces:
+      - name: e{module}a
+        type: 25gbase-x-sfp28
+      - name: e{module}b
+        type: 25gbase-x-sfp28     # 
+
+  - manufacturer: NetApp
+    model: X60132A – 4× 25 GbE SFP28
+    slug: netapp-x60132a
+    part_number: X60132A
+    interfaces:
+      - name: e{module}a
+        type: 25gbase-x-sfp28
+      - name: e{module}b
+        type: 25gbase-x-sfp28
+      - name: e{module}c
+        type: 25gbase-x-sfp28
+      - name: e{module}d
+        type: 25gbase-x-sfp28     # 
+
+  - manufacturer: NetApp
+    model: X60133A – 4× 10 GbE BASE-T
+    slug: netapp-x60133a
+    part_number: X60133A
+    interfaces:
+      - name: e{module}a
+        type: 10gbase-t
+      - name: e{module}b
+        type: 10gbase-t
+      - name: e{module}c
+        type: 10gbase-t
+      - name: e{module}d
+        type: 10gbase-t          # 
+
+  - manufacturer: NetApp
+    model: X60134A – 2× 100 GbE QSFP28 (iWARP)
+    slug: netapp-x60134a
+    part_number: X60134A
+    interfaces:
+      - name: e{module}a
+        type: 100gbase-x-qsfp28
+      - name: e{module}b
+        type: 100gbase-x-qsfp28   # 
+
+  - manufacturer: NetApp
+    model: X60140A – 4× 32 G FC
+    slug: netapp-x60140a
+    part_number: X60140A
+    interfaces:
+      - name: fc{module}a
+        type: fc-32g
+      - name: fc{module}b
+        type: fc-32g
+      - name: fc{module}c
+        type: fc-32g
+      - name: fc{module}d
+        type: fc-32g             # 
+
+  - manufacturer: NetApp
+    model: X60141A – 4× 64 G FC
+    slug: netapp-x60141a
+    part_number: X60141A
+    interfaces:
+      - name: fc{module}a
+        type: fc-64g
+      - name: fc{module}b
+        type: fc-64g
+      - name: fc{module}c
+        type: fc-64g
+      - name: fc{module}d
+        type: fc-64g             # 
+
+  - manufacturer: NetApp
+    model: X60142A – 4× 64 G FC (identique 60141A)
+    slug: netapp-x60142a
+    part_number: X60142A
+    interfaces:
+      - name: fc{module}a
+        type: fc-64g
+      - name: fc{module}b
+        type: fc-64g
+      - name: fc{module}c
+        type: fc-64g
+      - name: fc{module}d
+        type: fc-64g             # 
+
+  - manufacturer: NetApp
+    model: X60150A – 4× Mini-SAS HD 12 Gb
+    slug: netapp-x60150a
+    part_number: X60150A
+    interfaces:
+      - name: sas{module}a
+        type: sas-12g
+      - name: sas{module}b
+        type: sas-12g
+      - name: sas{module}c
+        type: sas-12g
+      - name: sas{module}d
+        type: sas-12g            # 
